@@ -22,11 +22,11 @@ if result.stdout.strip() != "true":
     raise ValueError("This script should be run inside a git repository.")
 
 # Starting from 1st January 2022
-current_date = datetime(2022, 1, 1)
-end_date = datetime(2023, 1, 1)
+current_date = datetime(2022, 2, 2)
+end_date = datetime(2023, 3, 3)
 delta = (end_date - current_date) / 1000  # Dividing the year into 1000 parts
 
-for _ in range(1000):
+for _ in range(10):
     # Rounding the date to remove microseconds and then converting to ISO format
     current_date_rounded = current_date.replace(microsecond=0)
     git_commit_with_date(f"Commit for {current_date_rounded}", current_date_rounded.isoformat())
