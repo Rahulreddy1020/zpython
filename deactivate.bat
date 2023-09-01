@@ -1,5 +1,7 @@
 @echo off
 
+##
+
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"
 )
